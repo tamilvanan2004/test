@@ -1,0 +1,489 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Default shadow for mobile */
+    border-top: 1px solid rgba(0, 0, 0, 0.246); /* Default border for mobile */
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.549);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Desktop style */
+@media (min-width: 600px) {
+    
+
+    nav {
+        position: fixed;
+        top: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for desktop */
+        border-top: none; /* Remove border for desktop */
+    }
+}
+
+/* Mobile style */
+/* Mobile style */
+@media (max-width: 599px) {
+    .food-card-img>div:nth-child(1){
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        padding: 10px;
+        font-size: 35px;
+    }
+    .food-card-img>div:nth-child(2){
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        color: white;
+        font-weight: 800;
+    }
+    .b-dot{
+        height: 5px;
+        width: 5px;
+        background-color: rgba(0, 0, 0, 0.62);
+        border-radius: 50%;
+    }
+    .food-card-img{
+        height: 200px;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .dot{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: green;
+
+    }
+    .green-dot{
+
+        height: 18px;
+        width: 18px;
+        border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .food-card-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 10px;
+        
+    }
+    .description-data:nth-child(2){
+        height: 10px;
+        width: 100%;
+        background-color: rgb(29, 155, 29);
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-weight: 800;
+    }
+    .description-data{
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        
+        color: black;
+        font-size: 12.5px;
+    }
+    .des-data:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+        width: 50%;
+       
+
+    }
+    .des-data:nth-child(2){
+        text-align: end;
+        width: 50%;
+
+    }
+    .food-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .food-card{
+        border-radius: 20px;
+        height: 300px;
+        width: 100%;
+    }
+    .menu-list>ul>li>button{
+        
+        padding: 10px;
+        width: 120px;
+        height: 50px;
+        border-radius: 40px;
+        border: none;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        font-size: 13px;
+        text-align: center;
+
+    }
+    .menu-list>ul{
+        padding-left: 5px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 0.5cm;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        color: white;
+
+    
+
+    }
+    .menu-list>ul::-webkit-scrollbar{
+        display: none;
+    }
+    li{
+        list-style: none;
+        
+    }
+    .menu-list{
+        padding-top: 20px;
+        position: sticky;
+        
+    }
+    .ec-cards{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        gap: 16px;
+        overflow-x: scroll;
+
+    }
+    .ec-cards::-webkit-scrollbar{
+        display: none;
+    }
+    .ec-card{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1;
+        color: white;
+        gap: 5px;
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+    .ec-card-img{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .ec{
+        padding-top: 15px;
+    }
+    .popL-card{
+        height: 150px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border-radius: 30px;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        
+    }
+    .pop-text{
+        padding: 10px;
+    }
+    .popL-card:nth-child(even){
+        background: linear-gradient(to top,rgb(241, 22, 58),rgb(245, 110, 132),rgb(180, 133, 141));
+    }
+    .popL-card:nth-child(odd){
+        background: linear-gradient(to bottom,rgb(119, 20, 180),rgb(223, 89, 216));
+    }
+    .popL-cards{
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        overflow-x: scroll;
+        gap: 16px;
+
+    }
+    .popL-cards::-webkit-scrollbar{
+        display: none;
+    }
+    .popL{
+        padding-top: 40px;
+    }
+    .csd-img-continer img{
+        object-fit: cover;
+        height: 70px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    .csd-card{
+        height: 120px;
+        width: 120px;
+        flex-direction: column ;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+       text-align: center;
+        font-size: 10PX;
+        color: white;
+        background-color: black;
+        box-shadow: 1px -1px 10px 2px rgba(219, 215, 215, 0.486);
+    }
+    .csd-card span{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .csd-cards{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 0.5cm;
+        overflow-x: scroll;
+        padding: 10px;
+        row-gap: 30px;
+
+    }
+    .csd-cards::-webkit-scrollbar{
+        display: none;
+    }
+    .off-slog{
+        padding: 5px;
+        padding-top: 10px;
+    }
+    .m-off-cards {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        overflow-y:scroll ;
+        gap: 16px;
+    }
+    .m-off-cards::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .m-off-card{
+        height: 100px;
+        width: 80px;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-shadow: 0px -4px 6px 5px rgba(255, 255, 255, 0.194);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .np-dis{
+        margin-top: 5.5cm;
+    }
+    
+    .carousel-item {
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .carousel-item.active {
+        opacity: 1;
+    }
+    
+    
+    .carousels{
+        padding-top: 10px;
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;
+
+    }
+    body::-webkit-scrollbar{
+        display: none;
+    }
+    .np-dis-container{
+        text-align: center;
+        height: auto;
+        width: 100%;
+        border: 1px solid white;
+        border-left: none;
+        border-right: none;
+        color: rgba(255, 255, 255, 0.907);
+        font-size: 18px;
+        font-weight: 350;
+    }
+    .np-dis-container span{
+        font-weight: 700;
+    }
+    
+    nav {
+        z-index: 1000;
+        position: fixed;
+        bottom: 0;
+        width: 100%; /* Ensure the nav spans the full width */
+        box-shadow: 0 -4px 6px rgba(255, 255, 255, 0.194); /* Shadow for mobile */
+        border-top: 1px solid rgba(0, 0, 0, 0.2); /* Border for mobile */
+        background-color: black; /* Add a background color for clarity */
+    }
+    
+    nav > a {
+        padding: 10px;
+        display: inline-block; /* Ensure links are inline-block for proper padding */
+    }
+    
+    .home-container {
+        height: 90%;
+        width: 90%;
+        color: #333; /* Remove duplicate color declaration */
+        font-size: 24px;
+        margin: auto; /* Center the container */
+        padding-bottom: 90px;
+        box-sizing: border-box; /* Include padding in the element's total width and height */
+    }
+    
+    .nav-top {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        position: sticky;
+        top: 0; /* Ensure it sticks to the top */
+        z-index: 1000; /* Ensure it is above other content */
+    }
+    .text{
+        color: white;
+        font-size: 16px;
+    }
+    .user {
+        padding: 5px;
+        color: black; /* Change text color to contrast background */
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex; /* Center content vertically and horizontally */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .user > i {
+        color: black; /* Ensure icon color contrasts with background */
+        background: transparent;
+    }
+    
+    .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        padding: 10px;
+    }
+    
+    .location > .inp > input {
+        height: 50px;
+        width: 280px; /* Correct width declaration */
+        background-color: white;
+        padding: 10px;
+        font-size: 15px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-sizing: border-box; /* Include padding in the element's total width and height */
+    }
+    
+    .loc-data {
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-weight: 100;
+        display: flex; /* Center content vertically and horizontally */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input {
+        outline: none;
+        border: none;
+    }
+    
+    input:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Apply box-sizing globally */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.line{
+    height: 1px;
+    background-color: gold;
+    width: 100%;
+
+
+}
+.line-text{
+    display: flex;
+    align-items: center;
+    
+}

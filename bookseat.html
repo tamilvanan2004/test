@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="./css/bs.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><i class="fa fa-home"></i></a>
+        <a href="./food.html"><i class="fas fa-concierge-bell"></i></a>
+        <a href="./bookseat.html" class="active"><i class="fas fa-chair"></i></a>
+        <a href="./user.html"><i class="fa fa-user"></i></a>
+    </nav>
+    <div class="bs-container">
+        <div class="bs-content">
+            <div class="nav-top">
+                <div class="location">
+
+                </div>
+                <div class="location">
+
+                    <div class="inp"><input type="text" placeholder="Search Your Resturent"></div>
+                    <div class="user m-text">
+                        <div class="location"> <i class="fa fa-search" aria-hidden="true"></i> </div></i>
+                    </div>
+                </div>
+            </div>
+            <div class="whod">
+                <div class="whod-content">
+                    <div class="line-text">
+                        <div class="text">WHAT'S HOT ON DINEOUT</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu-list">
+                        <ul>
+                            <li><button id="all-btn" class="res-active all">All </button></li>
+                            <li><button id="tr-btn" class="tr-btn">Trending Restaurants </button></li>
+                            <li class="sortby"><button id="dd-btn" class="dd-btn">Deals of the Day</button>
+                            </li>
+                            <li><button id="po-btn" class="po-btn"> Pre-Book Offers</button></li>
+                        </ul>
+                    </div>
+                    <div class="rest-cards">
+                        <div class="rest-card tr">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://b.zmtcdn.com/data/collections/293255cbfe49f4ebdb244c1bfc3a0f74_1675233652.jpg?fit=around|562.5:360&crop=562.5:360;*,*');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> Zing Rooftop Restobar</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card tr">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/74/49/38/jhind.jpg?w=600&h=-1&s=1');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> Toscano</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card tr">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://b.zmtcdn.com/data/pictures/2/20590792/d7959cbc840c207c2036848c5cf78945_featured_v2.jpg');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> DIL SE Rasoi </div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card po">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://assets.architecturaldigest.in/photos/64f85037ec0bc118bdd98aba/4:3/w_1440,h_1080,c_limit/Untitled%20design%20(14).png');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> Khandani Rajdhani</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card po">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://6amcity.brightspotcdn.com/dims4/default/26f5f53/2147483647/strip/true/crop/1332x750+0+69/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk1-prod-sixam-city.s3.us-east-2.amazonaws.com%2Fbrightspot%2F0d%2F84%2F7c175b5e443092d969b6c19af3f5%2F393170483-18307701454185066-3288527068679201488-n.jpg');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> Gully Baar</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card po">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://assets.architecturaldigest.in/photos/63733ec2a2dd6ea6560eb6da/16:9/w_2560%2Cc_limit/Ditas%2520Interior%2520Image%2520-%25201%2520(8).png');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> Meeze</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card dd">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://assets.gqindia.com/photos/62a9d4653e8cdc9b632eb2ad/master/pass/10%20restaurants%20in%20Mumbai%20that%20offer%20the%20best%20sunset%20views.jpg');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> The Cycle Gap</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card dd">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://media.timeout.com/images/106000654/750/422/image.jpg');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> Sundays</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rest-card dd">
+                            <div class="rest-card-img"
+                                style="background-image: url('https://assets.architecturaldigest.in/photos/65e9631d9719efc62841b9d5/16:9/w_2560%2Cc_limit/DSC07703_11zon.jpg');">
+                                <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                <div class="rest-name"> Libarrel</div>
+                            </div>
+                            <div class="rest-card-content">
+                                <div class="con-data">
+                                    <div class="cit">
+                                        <span>Continental . Italian</span>
+                                        <br>
+                                        <span>Mylapore, Chennai</span>
+                                    </div>
+                                    <div class="dis">
+                                        <span>Rs 1200 for two</span>
+                                        <br>
+                                        <span>22.4Km</span>
+                                    </div>
+                                </div>
+                                <div class="rest-off-container">
+                                    <div class="rest-off">
+                                        <p>
+                                            Flat 50% off on pre-booking
+                                        </p>
+                                        <p>
+                                            +5 more
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="popL">
+                <div class="line-text">
+                    <div class="text">POPULAR LOCATIONS</div>
+                    <div class="line"></div>
+                </div>
+                <div class="popL-cards">
+                    <div class="popL-card">
+                        <div class="pop-text">ADAYAR</div>
+                    </div>
+                    <div class="popL-card">
+                        <div class="pop-text">ANNA NAGAR</div>
+                    </div>
+                    <div class="popL-card">
+                        <div class="pop-text">BESANT NAGAR </div>
+                    </div>
+                    <div class="popL-card">
+                        <div class="pop-text">NAVALUR</div>
+                    </div>
+                    <div class="popL-card">
+                        <div class="pop-text">REDHILLS</div>
+                    </div>
+                    <div class="popL-card">
+                        <div class="pop-text">ALWARPET</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hwoym">
+                <div class="line-text">
+                    <div class="text">HEY, WHAT'S ON YOUR MIND?</div>
+                    <div class="line"></div>
+                </div>
+                <div class="csd-cards">
+                    <div class="csd-card">
+                        <div class="csd-img-continer"><img
+                                src="https://images.jdmagicbox.com/quickquotes/listicle/listicle_1680258934250_w5b9p_1040x500.jpg"
+                                alt=""></div>
+                        <div>
+                            <span>Live match screening</span>
+                        </div>
+                    </div>
+                    <div class="csd-card">
+                        <div class="csd-img-continer"><img
+                                src="https://content.jdmagicbox.com/comp/chennai/v8/044pxx44.xx44.210429122931.i8v8/catalogue/bar-anna-nagar-anna-nagar-chennai-gastropubs-u61dfsiytx.jpg"
+                                alt="" srcset=""></div>
+                        <div> <span>Pubs & Bar</span></div>
+                    </div>
+                    <div class="csd-card">
+                        <div class="csd-img-continer"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4rr7DH7ELu_0QL4dX5_N9-y4g2rPyuQ-Iw&s"
+                                alt="" srcset=""></div>
+                        <div> <span>Quick Bite</span></div>
+                    </div>
+                    <div class="csd-card">
+                        <div class="csd-img-continer"> <img
+                                src="https://b.zmtcdn.com/data/collections/21650cff91a2be578aca3a09325fe694_1690789368.png?fit=around|562.5:360&crop=562.5:360;*,*"
+                                alt="" srcset=""> </div>
+                        <div><span>Pure Veg</span></div>
+                    </div>
+                    <div class="csd-card">
+                        <div class="csd-img-continer"><img
+                                src="https://imgmedia.lbb.in/media/2018/12/5c06aca994896c5c63ffebf3_1543941289179.jpg"
+                                alt=""></div>
+                        <div>
+                            <span>Buffets</span>
+                        </div>
+                    </div>
+                    <div class="csd-card">
+                        <div class="csd-img-continer"><img
+                                src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F3041%2Ftrend20210114112720.jpg"
+                                alt="" srcset=""></div>
+                        <div> <span>Romantic Dining</span></div>
+                    </div>
+                    <div class="csd-card">
+                        <div class="csd-img-continer"><img
+                                src="https://i.pinimg.com/736x/9b/e9/f4/9be9f4368ccdf1c42161f738c0d9e510.jpg" alt=""
+                                srcset=""></div>
+                        <div> <span>Rooftop & Outdoors</span></div>
+                    </div>
+                    <div class="csd-card">
+                        <div class="csd-img-continer"> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjI0_3fGo4NM99LAdrgrTNUOZZv5TQfswzrw&s"
+                                alt="" srcset=""> </div>
+                        <div> <span>Budget Friendly</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ftw">
+                <div class="line-text">
+                    <div class="text">FEATURE THIS WEEK</div>
+                    <div class="line"></div>
+                </div>
+                <div class="ftw-cards">
+                    <div class="ftw-card" style="background-image: url('https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2921%2Ftrend20200821131314.jpg');">
+                        <div class="ftw-data">
+                            <div class="fwt-content">
+                                <span>FLAT 20% OFF</span>
+                                <br>
+                                6th Avenue Restobar
+                            </div>
+                            <div class="ftw-card-loc">
+                                <div class="ftw-loc-content"> Anna Nagar  </div>
+                                <div class="ftw-loc-content"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ftw-card" style="background-image: url('https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2021/03/avatar-700x456.jpg');">
+                        <div class="ftw-data">
+                            <div class="fwt-content">
+                                <span>FLAT 20% OFF</span>
+                                <br>
+                                BLIND CH3MISTRY
+                            </div>
+                            <div class="ftw-card-loc">
+                                <div class="ftw-loc-content"> Anna Nagar  </div>
+                                <div class="ftw-loc-content"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ftw-card" style="background-image: url('https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F3395%2Ftrend20220204102523.jpg');">
+                        <div class="ftw-data">
+                            <div class="fwt-content">
+                                <span>FLAT 20% OFF</span>
+                                <br>
+                              Latte Kitchen
+                            </div>
+                            <div class="ftw-card-loc">
+                                <div class="ftw-loc-content"> Anna Nagar  </div>
+                                <div class="ftw-loc-content"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ftw-card" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGXKGj6v1hseI-rSF1AM6xw5PLAyNwt6ZvxQ&s');">
+                        <div class="ftw-data">
+                            <div class="fwt-content">
+                                <span>FLAT 20% OFF</span>
+                                <br>
+                                Rose Water
+                            </div>
+                            <div class="ftw-card-loc">
+                                <div class="ftw-loc-content"> Anna Nagar  </div>
+                                <div class="ftw-loc-content"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ftw-card" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/74/49/bb/bazaar.jpg?w=600&h=-1&s=1');">
+                        <div class="ftw-data">
+                            <div class="fwt-content">
+                                <span>FLAT 20% OFF</span>
+                                <br>
+                               Cibo
+                            </div>
+                            <div class="ftw-card-loc">
+                                <div class="ftw-loc-content"> Anna Nagar  </div>
+                                <div class="ftw-loc-content"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ftw-card" style="background-image: url('https://assets.vogue.in/photos/5ce3effd4a30b3e99f12a23b/master/pass/featured113.jpg');">
+                        <div class="ftw-data">
+                            <div class="fwt-content">
+                                <span>FLAT 20% OFF</span>
+                                <br>
+                                Aazhi - The Seafood Restaurant
+                            </div>
+                            <div class="ftw-card-loc">
+                                <div class="ftw-loc-content"> Anna Nagar  </div>
+                                <div class="ftw-loc-content"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="last">
+                    <div class="line-text">
+                        <div class="text">MUST-VISIT SPOTS FOR YOU</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="last-cards">
+                        <div class="last-card" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQSuDUphJMiEjp-4fyrPtpKoPM13wxj5ucg&s');">
+                            30 most Instaworthy Place
+                        </div>
+                        <div class="last-card" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjTdx789dD_nB2Iy9ZSl6w0w5RwpaJnNC0A&s');">
+                            30 handpicked local favourites
+                        </div>
+                        <div class="last-card" style="background-image: url('https://img.freepik.com/premium-photo/french-restaurant-ambiance-3d-featuring-vintage-cafe-aesthetic-vertical-mobile-wallpaper_795881-30532.jpg');">
+                            20 lip-smacking biriyani sports
+                        </div>
+                        <div class="last-card" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_v-DYa6zYzUihSrTWBwLoO5Tg0cqsyZxJIg&s');">
+                            30 party hotspots for an unforgettable night
+                        </div>
+                        <div class="last-card" style="background-image: url('https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+                            Molecules & Mixers:Top Cocktail Bars
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bs.js"></script>
+</body>
+
+</html>
